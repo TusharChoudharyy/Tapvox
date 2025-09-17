@@ -1,0 +1,113 @@
+@import '../../Styles/mixins.scss';
+
+.plans {
+  padding-block: 4rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  &__container {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.1rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.8rem;
+    box-shadow: 0 0 40px 5px rgba(132, 132, 132, 0.2);
+    border-radius: 1.9rem;
+    padding: 2.1rem;
+
+    @include respond(tab-land) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    @include respond(tab-port) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    @include respond(tab-land) {
+      order: 2;
+    }
+  }
+
+  &__card-features {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    img {
+      width: 1.2rem;
+    }
+  }
+
+  &_card_right {
+    position: relative;
+    display: grid;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.9rem;
+    }
+  }
+
+  &__card-title {
+    position: absolute;
+    place-self: center;
+  }
+
+  h6 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .button-primary {
+    margin-top: 0.5rem;
+  }
+
+  &__last-card {
+    display: grid;
+    place-content: center;
+    border-radius: 1.9rem;
+    background-image: url(../../assets/plan-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 7rem 1rem;
+
+    h3 {
+      color: #fff;
+    }
+  }
+}

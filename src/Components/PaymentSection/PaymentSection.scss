@@ -1,0 +1,89 @@
+@import "../../Styles/mixins.scss";
+
+.payment {
+  padding-block: 2rem 4rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    gap: 5rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-top: 2rem;
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__right {
+    position: relative;
+
+    h4 {
+      color: #6f00eb;
+    }
+
+    div {
+      color: #110d34;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+
+  .img-1 {
+    width: 50%;
+    margin-inline: auto;
+  }
+
+  .img-2{
+    position: absolute;
+    width: 60%;
+    right: 0;
+    bottom: -6%;
+    z-index: -1;
+  }
+
+  &__partners {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    background-color: #fff;
+    border-radius: 50%;
+    top: -10%;
+    right: 15%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    box-shadow: 0 0 40px 5px rgba(132, 132, 132, 0.2);
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__users {
+    position: absolute;
+    background-color: #fff;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    bottom: -6%;
+    left: 2rem;
+    box-shadow: 0 0 40px 5px rgba(132, 132, 132, 0.2);
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+}
