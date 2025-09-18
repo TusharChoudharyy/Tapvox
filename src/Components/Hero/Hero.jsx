@@ -1,8 +1,8 @@
 import "./Hero.scss";
 import Wrapper from "../Wrapper/Wrapper";
-import Img1 from "../../assets/hero-1.png"
-import Img2 from "../../assets/hero-2.png"
-import Img3 from "../../assets/hero-3.png"
+import Img1 from "../../assets/tapvox dashboard (2).svg"
+import Img2 from "../../assets/hero-right.svg"
+import Img3 from "../../assets/hero-left.svg"
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';

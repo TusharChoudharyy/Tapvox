@@ -1,6 +1,6 @@
 import "./Navbar.scss";
 import Wrapper from "../Wrapper/Wrapper";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/tapvox.png";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 function Navbar() {

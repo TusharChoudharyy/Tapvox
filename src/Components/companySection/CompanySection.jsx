@@ -34,10 +34,10 @@ function CompanySection() {
           <div className="company__left" data-aos='fade-right'>
             <img src={Phone} className="img-1" alt="" />
             <div className="img-2">
-              <img src={AppStore} alt="" />
+              {/* <img src={AppStore} alt="" /> */}
             </div>
             <div className="img-3">
-              <img src={PlayStore} alt="" />
+              {/* <img src={PlayStore} alt="" /> */}
             </div>
           </div>
 

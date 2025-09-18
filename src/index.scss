@@ -1,5 +1,9 @@
 @import "./Styles/mixins.scss";
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 *::after,
 *::before {
@@ -81,7 +85,7 @@ h6 {
 .button-primary {
   color: #fff;
   text-align: center;
-  background-color: #6f00eb;
+  background-color: #016f95;
   border-radius: 30px;
   padding: 10px 30px;
   transition: background-color 0.3 ease-in-out;
