@@ -12,29 +12,29 @@ function BlogSection() {
   })
    const blog = [
     {
-      title: "How to reach the top of the digital wallet",
+      title: "Seamless SMS and Voice Solutions",
       tag: 'Product',
       img: Img1,
-      date: 'May 6, 2024'
+      date: 'May 5, 2025'
     },
     {
-      title: "How sascard works with multiple banks",
+      title: "How Tapvox works with multiple banks",
       tag: 'Company',
       img: Img2,
-      date: 'May 5, 2024'
+      date: 'May 15, 2025'
     },
     {
-      title: "Building fintech is still too hard",
+      title: "How can Tapvox simplify fintech building processes",
       tag: 'Company',
       img: Img3,
-      date: 'May 2, 2024'
+      date: 'May 25, 2025'
     },
    ]
   return (
     <section className='blog'>
       <div className="blog__text" data-aos='fade-up'>
         <h3>Explore our Resources</h3>
-        <p>Navigate articles, whitepapers, and thought leadership pieces to learn more about Sascard.</p>
+        <p>Navigate articles, whitepapers, and thought leadership pieces to learn more about Tapvox.</p>
       </div>
 
       <div className="blog__container" data-aos='fade-up'>

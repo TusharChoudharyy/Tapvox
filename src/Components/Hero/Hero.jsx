@@ -1,6 +1,6 @@
 import "./Hero.scss";
 import Wrapper from "../Wrapper/Wrapper";
-import Img1 from "../../assets/tapvox dashboard (2).svg"
+import Img1 from "../../assets/Tapvoxdashboardupdated.svg"
 import Img2 from "../../assets/hero-right.svg"
 import Img3 from "../../assets/hero-left.svg"
 import Aos from "aos";

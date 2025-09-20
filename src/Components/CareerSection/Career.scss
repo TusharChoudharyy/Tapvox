@@ -1,0 +1,52 @@
+.career {
+  background-color: #110d34;
+  padding: 3rem 2rem;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #eeeff2;
+    margin-bottom: 1.5rem;
+  }
+
+  &__desc {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #f3f5f8;
+    margin-bottom: 2.5rem;
+  }
+
+  &__cta {
+    margin-top: 2rem;
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #f0f2f7;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    background-color: #111827;
+    color: #fff;
+    padding: 0.75rem 1.75rem;
+    border-radius: 9999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #4b5563;
+    }
+  }
+}

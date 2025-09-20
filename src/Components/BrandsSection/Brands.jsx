@@ -4,7 +4,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-// logos already imported
+// Swiper import
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode, Navigation } from "swiper/modules"; // Pagination removed
+import "swiper/css";
+import "swiper/css/navigation";
+
 import Logo1 from "../../assets/tapvox logos (155 x 40 px)/1.png";
 import Logo2 from "../../assets/tapvox logos (155 x 40 px)/2.png";
 import Logo3 from "../../assets/tapvox logos (155 x 40 px)/3.png";
@@ -20,7 +25,7 @@ function Brands() {
   const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 
   return (
-    <section id="brand" className="brands" >
+    <section id="brand" className="brands">
       <Wrapper>
         <div className="brands__container" data-aos="fade-up">
           <h2 className="brands__title">Our Trusted Partners</h2>
@@ -28,13 +33,54 @@ function Brands() {
             We proudly collaborate with leading global brands
           </p>
 
-          <div className="brands__grid">
+          {/* First row - Left to Right */}
+          <Swiper
+            modules={[Autoplay, FreeMode, Navigation]}
+            spaceBetween={30}
+            slidesPerView={4}
+            loop={true}
+            freeMode={true}
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+              reverseDirection: false,
+            }}
+            speed={8000}
+            // navigation // uncomment if you want arrows
+            className="brands__swiper"
+          >
             {logos.map((logo, i) => (
-              <div key={i} className="brands__item">
-                <img src={logo} alt={`Brand ${i + 1}`} />
-              </div>
+              <SwiperSlide key={i}>
+                <div className="brands__item">
+                  <img src={logo} alt={`Brand ${i + 1}`} />
+                </div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
+
+          {/* Second row - Right to Left */}
+          <Swiper
+            modules={[Autoplay, FreeMode]}
+            spaceBetween={30}
+            slidesPerView={4}
+            loop={true}
+            freeMode={true}
+            autoplay={{
+              delay: 4,
+              disableOnInteraction: false,
+              reverseDirection: true,
+            }}
+            speed={5000}
+            className="brands__swiper second-row"
+          >
+            {logos.map((logo, i) => (
+              <SwiperSlide key={i}>
+                <div className="brands__item">
+                  <img src={logo} alt={`Brand ${i + 1}`} />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </Wrapper>
     </section>

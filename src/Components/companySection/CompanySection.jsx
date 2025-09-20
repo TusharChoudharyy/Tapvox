@@ -5,7 +5,7 @@ import Wrapper from "../Wrapper/Wrapper";
 // import Company3 from "../../assets/tapvox logos (155 x 40 px)/3.png";
 // import Company4 from "../../assets/tapvox logos (155 x 40 px)/4.png";
 // import Company5 from "../../assets/tapvox logos (155 x 40 px)/5.png";
-import Phone from "../../assets/companies-phone.png";
+import Phone from "../../assets/companysectionphone.png";
 import AppStore from "../../assets/appstore.svg";
 import PlayStore from "../../assets/playstore.svg";
 import Bg from "../../assets/companies-bg.png";

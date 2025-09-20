@@ -1,40 +1,30 @@
 @import "../../Styles/mixins.scss";
 
 .brands {
-  background-color: #f9fafb; // halka grey background
+  background-color: #f9fafb;
   padding: 4rem 0;
-  border-top: 1px solid #e2e8f0; // thin divider top
-  border-bottom: 1px solid #e2e8f0; // divider bottom
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
   text-align: center;
 
   &__title {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: #0f766e; // teal
+    color: #0f766e;
   }
 
   &__subtitle {
     font-size: 1rem;
     color: #475569;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2.5rem;
-    align-items: center;
-    justify-content: center;
+  .brands__swiper {
+    margin-bottom: 2rem;
 
-    @media (max-width: 1024px) {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-
-    @media (max-width: 640px) {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
+    .swiper-wrapper {
+      transition-timing-function: linear !important; // smooth flow
     }
   }
 
@@ -51,11 +41,27 @@
     img {
       max-height: 50px;
       width: auto;
+      transition: transform 0.3s ease;
     }
 
+    // scale-up effect on hover
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-4px) scale(1.05);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // dark-mode friendly (optional)
+  &.dark {
+    background-color: #0f172a;
+    .brands__title {
+      color: #38bdf8;
+    }
+    .brands__subtitle {
+      color: #94a3b8;
+    }
+    &__item {
+      background: #1e293b;
     }
   }
 }
