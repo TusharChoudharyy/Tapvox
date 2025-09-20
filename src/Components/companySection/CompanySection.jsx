@@ -1,10 +1,10 @@
 import "./CompanySection.scss";
 import Wrapper from "../Wrapper/Wrapper";
-import Company1 from "../../assets/company-1.svg";
-import Company2 from "../../assets/company-2.svg";
-import Company3 from "../../assets/company-3.svg";
-import Company4 from "../../assets/company-4.svg";
-import Company5 from "../../assets/company-5.svg";
+// import Company1 from "../../assets/tapvox logos (155 x 40 px)/1.png";
+// import Company2 from "../../assets/tapvox logos (155 x 40 px)/2.png";
+// import Company3 from "../../assets/tapvox logos (155 x 40 px)/3.png";
+// import Company4 from "../../assets/tapvox logos (155 x 40 px)/4.png";
+// import Company5 from "../../assets/tapvox logos (155 x 40 px)/5.png";
 import Phone from "../../assets/companies-phone.png";
 import AppStore from "../../assets/appstore.svg";
 import PlayStore from "../../assets/playstore.svg";
@@ -17,9 +17,9 @@ function CompanySection() {
     Aos.init({duration: 1000});
   })
   return (
-    <section className="company">
+    <section id="WhyChooseUs" className="company">
       <Wrapper>
-        <div data-aos="fade-up">
+        {/* <div data-aos="fade-up">
         <h4>Trusted by over 500+ companies</h4>
         <div className="company__companies">
           <img src={Company1} alt="" />
@@ -28,7 +28,7 @@ function CompanySection() {
           <img src={Company4} alt="" />
           <img src={Company5} alt="" />
         </div>
-        </div>
+        </div> */}
 
         <div className="company__container">
           <div className="company__left" data-aos='fade-right'>

@@ -11,7 +11,7 @@ function Hero() {
     Aos.init({duration: 1000});
   })
   return (
-    <section className="hero">
+    <section id="Home" className="hero">
       <Wrapper className="hero__container">
         <div className="hero__left" data-aos='zoom-in-up'>
           <h1>Global Voice & Messaging Solutions</h1>

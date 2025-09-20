@@ -1,18 +1,17 @@
-@import '../../Styles/mixins.scss';
-
 .footer {
-  background-color: #676565;
+  background-color: #ffffff;
   padding-block: 5rem 2rem;
-  color: #fff;
   font-family: 'Inter', sans-serif;
+  color: #0f766e; // teal
+  border-top: 1px solid #d1d5db; // 👈 ye footer ke upar divider dega
 
   a {
-    color: #fff;
+    color: #0f766e;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 
     &:hover {
-      color: #a25df1;
+      color: #115e59;
     }
   }
 
@@ -36,7 +35,7 @@
 
     .footer__tagline {
       font-size: 0.95rem;
-      color: #ccc;
+      color: #0f766e;
       line-height: 1.6;
     }
   }
@@ -45,17 +44,17 @@
     h4 {
       margin-bottom: 1rem;
       font-size: 1.1rem;
-      color: #fff;
+      color: #0f766e;
     }
 
     p {
       margin: 0.3rem 0;
       font-size: 0.95rem;
-      color: #ccc;
+      color: #0f766e;
     }
 
     strong {
-      color: #fff;
+      color: #0f766e;
     }
   }
 
@@ -63,7 +62,7 @@
     h4 {
       margin-bottom: 1rem;
       font-size: 1.1rem;
-      color: #fff;
+      color: #0f766e;
     }
 
     ul {
@@ -75,9 +74,9 @@
         font-size: 0.95rem;
 
         a {
-          color: #ccc;
+          color: #0f766e;
           &:hover {
-            color: #a25df1;
+            color: #115e59;
           }
         }
       }
@@ -85,19 +84,18 @@
   }
 
   &__bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
     padding-top: 1.5rem;
     text-align: center;
 
     p {
       font-size: 0.85rem;
-      color: #aaa;
+      color: #0f766e;
       margin: 0.3rem 0;
     }
 
     .footer__credits {
       font-size: 0.9rem;
-      color: #fff;
+      color: #115e59;
       font-weight: 500;
     }
   }

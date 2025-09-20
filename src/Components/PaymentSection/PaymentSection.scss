@@ -1,12 +1,12 @@
 @import "../../Styles/mixins.scss";
 
 .payment {
-  padding-block: 2rem 4rem;
+  padding-block: 2rem;
 
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: flex-start;
+    align-items: center; // FIXED (center instead of flex-start)
     gap: 5rem;
 
     @include respond(tab-port) {
@@ -29,6 +29,9 @@
 
   &__right {
     position: relative;
+    display: flex;
+    justify-content: center; // keeps image centered
+    align-items: center;
 
     h4 {
       color: #6f00eb;
@@ -42,16 +45,9 @@
   }
 
   .img-1 {
-    width: 50%;
-    margin-inline: auto;
-  }
-
-  .img-2{
-    position: absolute;
-    width: 60%;
-    right: 0;
-    bottom: -6%;
-    z-index: -1;
+    width: 75%; // reduced from 85% to avoid pushing height
+    height: auto; // keep aspect ratio
+    display: block;
   }
 
   &__partners {

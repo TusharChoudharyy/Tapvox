@@ -1,0 +1,61 @@
+@import "../../Styles/mixins.scss";
+
+.brands {
+  background-color: #f9fafb; // halka grey background
+  padding: 4rem 0;
+  border-top: 1px solid #e2e8f0; // thin divider top
+  border-bottom: 1px solid #e2e8f0; // divider bottom
+  text-align: center;
+
+  &__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #0f766e; // teal
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: #475569;
+    margin-bottom: 3rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    img {
+      max-height: 50px;
+      width: auto;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

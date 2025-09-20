@@ -1,4 +1,5 @@
 import BlogSection from "./Components/BlogSection/BlogSection"
+import Brands from "./Components/BrandsSection/Brands"
 // import About from "./Components/Countries/About"
 // import CountriesSection from "./Components/Countries/CountriesSection"
 import CtaSection from "./Components/CtaSection/CtaSection"
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Hero />
       {/* <About /> */}
+      <Brands />
       <CompanySection />
       <FeaturesSection />
       <PaymentSection />

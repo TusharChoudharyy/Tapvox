@@ -14,7 +14,7 @@ function FeaturesSection() {
     Aos.init({duration: 1000});
   })
   return (
-    <section className='features'>
+    <section id='features' className='features'>
       <Wrapper>
         <div className="features__text" data-aos='fade-up'>
           <h3>Reliable Global Voice & Messaging Solutions</h3>

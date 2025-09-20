@@ -1,6 +1,6 @@
 import './CtaSection.scss';
 import Wrapper from '../Wrapper/Wrapper';
-import PhoneImg from "../../assets/cta-phone.png";
+import PhoneImg from "../../assets/Cta-imagessvg.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';

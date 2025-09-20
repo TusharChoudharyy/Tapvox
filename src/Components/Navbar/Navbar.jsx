@@ -12,13 +12,28 @@ function Navbar() {
 
       <ul className={`navbar__links ${showNav ? "show-nav" : ""}`}>
         <li onClick={() => setShowNav(false)}>
-          <a href="#">Home</a>
+          <a href="#Home">Home</a>
         </li>
+
         <li onClick={() => setShowNav(false)}>
-          <a href="#">About</a>
+          <a href="#WhyChooseUs">Why Us
+</a>
         </li>
+
         <li onClick={() => setShowNav(false)}>
-          <a href="#">Pricing</a>
+          <a href="#brand">Partners
+
+</a>
+        </li>
+
+
+        <li onClick={() => setShowNav(false)}>
+          <a href="#features">Features</a>
+        </li>
+        
+
+        <li onClick={() => setShowNav(false)}>
+          <a href="#">Why</a>
         </li>
         <li onClick={() => setShowNav(false)}>
           <a href="#">Blog</a>
